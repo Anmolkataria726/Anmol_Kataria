@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6813bce5d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="top-section">
+    
+            <img src="IMG_8538.jpg" alt="">
+            <div class="myDetails">
+                <h2 class="name">I'm Anmol Kataria,</h2>
+                <h3 class="professional-title">a Full Stack Developer and Blockchain Developer</h3>
+                
+                <div class="btns">
+                        
+                    <a href="resume.pdf" download="Resume.pdf" >
+                        <button>
+                            <i class="fa-solid fa-download"></i>
+                            Resume
+                        </button>
+                     </a>
+                     <a href="#form1">
+                        
+                        <button id="contact">Contact Me</button>
+                     </a>
+                </div>
+            </div>
+
+    </section>
+
+    
+
+    <div class="form1" id="form1">
+        <form action="https://httpbin.org/post" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" size="22" required>
+        
+            <br>
+
+            <label for="address">Address: </label>
+            <input type="text" name="address" id="address" size="20"required>
+            
+            <label for="city">City: </label>
+            <input list="cities" name="city" id="city" size="12" required>
+            
+            <datalist id="cities">
+                <option value="Toronto">
+                <option value="Montreal">
+                <option value="Calgary">
+                <option value="Ottawa">
+                <option value="Edmonton">
+                <option value="Winnipeg">
+                <option value="Vancouver">
+                <option value="Brampton">
+                <option value="Windsor">
+            </datalist>
+
+            <label for="postal">Postal Code: </label>
+            <input type="text" name="postal" id="postal" size="7" required>
+            
+
+            <br>
+            <input type="radio" id="question" name="about" value="question">
+            <label for="question" id="ques">Question</label><br>
+                    
+            <input type="radio" id="comment" name="about" value="comment">
+            <label for="comment" id="comm">Comment</label><br>
+
+            <input type="radio" id="hiring" name="about" value="hiring">
+            <label for="hiring" id="hire">Hiring</label>
+             
+            <br>
+            <label for="mesage">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+            <p id="errMsg"></p>
+            <br>
+            <input type="submit" value='Submit' class="btn" id="submitAll">
+            <input type="reset"  value="Clear" class="btn"> 
+        
+        </form>
+    </div>
+
+
+
+    <!--------------------- Basic Information --------------------------->
+
+    <div class="basic-info">
+        <div class="honesty">
+            <h2>About Me and Academic Honesty</h2>
+            <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic
+                Policy. No part of this assessment has been copied manually or electronically from any other
+                source (including web sites) except for the information supplied by the WEB222 instructors and /
+                or made available in this assessment for my use. I also declare that no part of this assignment
+                has been distributed to other students.</p>
+            <span><b>Date: April 11, 2022</b></span>
+        </div>
+
+        <div class="info">
+            <h2>Basic Information</h2>
+            <table>
+                <tr>
+                    <td class="title-info">AGE:</td>
+                    <td class="my-info">21</td>
+                </tr>
+                <tr>
+                    <td class="title-info">EMAIL:</td>
+                    <td class="my-info">akataria5@myseneca.ca</td>
+                </tr>
+                <tr>
+                    <td class="title-info">LANGUAGE:</td>
+                    <td class="my-info">English, Punjabi, Hindi</td>
+                </tr>
+                <tr >
+                    <td class="title-info">SECTION:</td>
+                    <td class="my-info">ZCC</td>
+                </tr>
+                <tr>
+                    <td class="title-info">STUDENT ID:</td>
+                    <td class="my-info">103087219</td>
+                </tr>
+                <tr>
+                    <td class="title-info">INSTRUCTOR:</td>
+                    <td class="my-info">Muath Alzghool</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+    </div>
+    <h1 class="education-title">Education</h1>
+    <section class="education">
+        <div class="year">
+            <h3>2021 - 2023 [Expected]</h3>
+            <span>Post-Secondary Diploma</span>
+        </div>
+        <div class="edu-info">
+            <h3>Computer Programming</h3>
+            <h4>Seneca college, Toronto</h4><br>
+            <h5>School: School of Software Design & Data Science</h5>
+            <h5>Credential: Ontario College Diploma</h5>
+        </div>
+    </section>
+
+
+    <section class="education" id="education">
+        <div class="year">
+            <h3>2020 - 2021</h3>
+            <span>Certificate</span>
+        </div>
+        <div class="edu-info">
+            <h3> M.S Office and Programming in C and C++</h3>
+            <h4>Z-Career Computers</h4><br>
+            <h4>Percentage: 87%</h4>
+        </div>
+    </section>
+
+
+
+    
+    <div class="footer">
+
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>

@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background-color: orange;
+    font-size: 15px;
+}
+
+.top-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    display: flex;
+    position: relative;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px black;
+  }
+
+
+  img{
+      width: 45%;
+      position: relative;
+      border-radius: 15px 0px 0px 15px;
+  }
+
+  .myDetails{   
+    padding-top: 100px;  
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+ 
+  }
+
+  
+
+
+  button{
+      margin-top: 40px;
+    background-color: black; /* Green */
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 20px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  button:hover{
+      color: orange;
+      transition: 1s;
+      border: 1px solid orange;
+  }
+
+  @media(max-width: 950px){
+      .myDetails{
+          font-size: 25px;
+          line-height: 60px;
+      }
+
+      button{
+          margin-top: 20px
+      }
+  }
+  
+  @media(max-width: 700px){
+       .top-section{
+           height: 900px;
+           display: block;
+           width: 80%;
+       } 
+
+       img{
+           width: 100%;
+           border-radius: 15px 15px 0px 0px;
+           height: 500px;
+       }
+
+       .myDetails{
+           padding-top: 30px;
+           font-size: 20px;
+       }
+
+}
+
+
+
+
+  /* --------------------- Basic Information ---------------------------*/
+
+.basic-info{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 40px;
+    box-shadow: 0px 0px 6px black;
+}
+
+.honesty, .info{
+    padding-right: 100px;
+}
+
+.honesty p {
+    padding: 10px 0px;
+}
+
+
+.info table{
+    padding-top: 10px;
+}
+
+
+.title-info{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.my-info{
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+
+@media(max-width: 750px){
+    .basic-info{
+        display: block;
+        padding: 20px;
+        font-size: 18px;
+    }   
+
+        
+    .honesty, .info{
+        padding-right: 20px;
+    }
+
+        
+    .my-info{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .title-info{
+        font-size: 18px;
+    }
+
+    .info{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+/*------------------------- education information -------------------*/
+
+.education-title{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.education{
+    width: 85%;
+    background-color: white;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 0px 6px black;
+    font-size: 22px;
+    line-height: 40px;
+    
+}
+
+.year{
+    text-align: center;
+    padding-top: 70px;
+    width: 35%;
+    background-color: black;
+    color: white;
+}
+
+.edu-info{
+    line-height: 35px;
+    padding: 30px 20px 60px 20px;
+}
+
+
+@media(max-width: 750px){
+    .education{
+        display: block;
+    }
+
+    .year{
+        width: 100%;
+    }
+}
+
+.footer{
+    height: 75px;
+}
+
+
+
+/*--------------form------------------*/
+
+.form1{
+    display: none;
+    background-color: rgb(254, 245, 227);
+    position: relative;
+    width: 900px;
+    box-shadow: 0px 0px 6px black;
+    margin: auto;
+    font-size: 23px;
+    line-height: 40px;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.form1 input, textarea{
+    font-size: 22px;
+    border: 1px solid black;
+}
+.form1 .btn{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(221, 73, 73);
+    color: white;
+    margin: 20px;
+    width: 140px;
+}
+
+.btn:hover{
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+@media(max-width: 750px){
+    .form1{
+        width: 90%;
+        padding: 10px;
+    }
+    input{
+        display: block;
+    }
+}
